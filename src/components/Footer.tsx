@@ -39,7 +39,7 @@ export default function Footer() {
 
             <p style={{ fontSize: 11, color: "var(--text-muted)", letterSpacing: 1, position: "relative" }}>
                 © 2026 Stitch &amp; Style. All rights reserved. 
-                <span style={{ opacity: 0.04, fontSize: 8, display: "block", marginTop: 4 }}>This website is strictly to showcase our frontend skills</span>
+                <span style={{ opacity: 0.15, fontSize: 9, display: "block", marginTop: 6, letterSpacing: 0.5 }}>This website is strictly to showcase our frontend skills</span>
             </p>
 
             {/* Founders Section */}
