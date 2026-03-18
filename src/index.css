@@ -464,3 +464,59 @@ input[type="range"]::-moz-range-thumb {
         opacity: 0;
     }
 }
+
+/* ── Mobile Layout Fixes ── */
+@media (max-width: 768px) {
+    .nav-container {
+        width: 90vw !important;
+        padding: 10px 16px !important;
+        gap: 16px !important;
+        overflow-x: auto !important;
+        justify-content: flex-start !important;
+        scrollbar-width: none;
+    }
+    .nav-container::-webkit-scrollbar {
+        display: none;
+    }
+    .nav-container > a:first-child {
+        position: sticky;
+        left: 0;
+        background: var(--bg-primary); /* to mask scrolling items if needed, but transparent might be fine */
+        z-index: 2;
+        padding-right: 12px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 5vw;
+    }
+    .hero-buttons > * {
+        width: 100%;
+    }
+    .quickview-modal > div {
+        flex-direction: column !important;
+        overflow-y: auto !important;
+        max-height: 90vh !important;
+    }
+    .quickview-img {
+        width: 100% !important;
+        min-height: 300px !important;
+        height: 300px !important;
+    }
+    .quickview-details {
+        width: 100% !important;
+        padding: 24px 20px !important;
+        overflow-y: visible !important;
+    }
+    .size-card {
+        padding: 24px 16px !important;
+    }
+    .checkout-card {
+        padding: 28px 20px !important;
+    }
+    .checkout-steps {
+        flex-wrap: wrap;
+        gap: 16px !important;
+        justify-content: center;
+    }
+}

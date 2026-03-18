@@ -85,7 +85,7 @@ export default function HeroSection() {
             </p>
 
             {/* CTA Buttons */}
-            <div style={{
+            <div className="hero-buttons" style={{
                 display: "flex", gap: 16, marginTop: 40,
                 position: "relative", zIndex: 2,
                 transform: `translateY(${-offset * 0.1}px)`,

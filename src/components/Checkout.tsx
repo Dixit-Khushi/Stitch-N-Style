@@ -88,7 +88,7 @@ export default function Checkout() {
             {/* Steps */}
             {items.length > 0 && !ordered && (
                 <>
-                    <div style={{ display: "flex", gap: 28, marginBottom: 36 }}>
+                    <div className="checkout-steps" style={{ display: "flex", gap: 28, marginBottom: 36 }}>
                         {[{ n: 1, l: "Login" }, { n: 2, l: "Shipping" }, { n: 3, l: "Pay" }].map(s => (
                             <div key={s.n} style={{ display: "flex", alignItems: "center", gap: 8, cursor: s.n <= step ? "pointer" : "default", opacity: s.n <= step ? 1 : 0.3 }}
                                 onClick={() => { if (s.n <= step) { setStep(s.n); setPaymentMethod(null); } }}>
@@ -103,7 +103,7 @@ export default function Checkout() {
                         ))}
                     </div>
 
-                    <div className="glass-strong" style={{ width: "100%", maxWidth: 480, minHeight: 280, borderRadius: "var(--r-xl)", padding: "40px 36px", overflow: "hidden" }}>
+                    <div className="glass-strong checkout-card" style={{ width: "100%", maxWidth: 480, minHeight: 280, borderRadius: "var(--r-xl)", padding: "40px 36px", overflow: "hidden" }}>
                         {/* Step 1 — Social Login */}
                         {step === 1 && (
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 20, animation: "fadeInUp 0.4s" }}>

@@ -93,7 +93,7 @@ function QuickView({ product, onClose }: { product: Product; onClose: () => void
             display: "flex", alignItems: "center", justifyContent: "center",
             animation: "fadeInUp 0.3s ease-out",
         }}>
-            <div onClick={e => e.stopPropagation()} style={{
+            <div onClick={e => e.stopPropagation()} className="quickview-modal" style={{
                 width: "90%", maxWidth: 720, maxHeight: "85vh",
                 background: "var(--bg-card)", borderRadius: "var(--r-xl)",
                 border: "1px solid rgba(212,175,55,0.15)",
@@ -101,7 +101,7 @@ function QuickView({ product, onClose }: { product: Product; onClose: () => void
                 boxShadow: "0 40px 80px rgba(0,0,0,0.6)",
             }}>
                 {/* Image */}
-                <div style={{ width: "50%", minHeight: 400, position: "relative" }}>
+                <div className="quickview-img" style={{ width: "50%", minHeight: 400, position: "relative" }}>
                     <img src={product.image} alt={product.name} style={{
                         width: "100%", height: "100%",
                         objectFit: "cover", objectPosition: "center",
@@ -119,7 +119,7 @@ function QuickView({ product, onClose }: { product: Product; onClose: () => void
                 </div>
 
                 {/* Details */}
-                <div style={{ width: "50%", padding: "32px 28px", display: "flex", flexDirection: "column", gap: 16, overflowY: "auto" }}>
+                <div className="quickview-details" style={{ width: "50%", padding: "32px 28px", display: "flex", flexDirection: "column", gap: 16, overflowY: "auto" }}>
                     <button onClick={onClose} style={{
                         alignSelf: "flex-end", background: "none", border: "none",
                         color: "var(--text-muted)", cursor: "pointer", fontSize: 20, fontFamily: "inherit",

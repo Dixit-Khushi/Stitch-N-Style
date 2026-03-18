@@ -42,7 +42,7 @@ export default function SizeGuide() {
 
                 {/* Size Finder Card — 3D tilt */}
                 <div
-                    className="glass-strong"
+                    className="glass-strong size-card"
                     style={{
                         flex: "1 1 320px", maxWidth: 520, borderRadius: "var(--r-xl)",
                         padding: "40px 32px", display: "flex", flexDirection: "column", gap: 28,
@@ -122,7 +122,7 @@ export default function SizeGuide() {
 
                 {/* Size Chart Table — 3D card */}
                 <div
-                    className="glass"
+                    className="glass size-card"
                     style={{
                         flex: "1 1 280px", maxWidth: 340, borderRadius: "var(--r-xl)",
                         padding: "32px 24px",

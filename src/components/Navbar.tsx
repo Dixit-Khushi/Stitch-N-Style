@@ -42,7 +42,7 @@ export default function Navbar({ onCartOpen }: NavbarProps) {
     };
 
     return (
-        <nav className="glass" style={{
+        <nav className="glass nav-container" style={{
             position: "fixed", top: 16, left: "50%", transform: "translateX(-50%)",
             zIndex: 100, display: "flex", alignItems: "center", gap: 28,
             padding: "12px 28px", borderRadius: "var(--r-full)",
