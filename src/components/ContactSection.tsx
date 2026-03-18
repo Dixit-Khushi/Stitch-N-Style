@@ -68,7 +68,7 @@ export default function ContactSection() {
                         padding: "12px 0", fontSize: 11, color: "var(--text-muted)",
                     }}>
                         <span>📧 hello@stitchstyle.in</span>
-                        <span>📞 +91 98765 43210</span>
+                        <span>📞 +91 XXXXX XXXXX</span>
                         <span>📍 Udaipur, Rajasthan, India</span>
                     </div>
 
