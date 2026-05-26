@@ -8,7 +8,7 @@
 
 ## 🌐 Deployment
 
-🔗 **Live Demo:** _[URL will be added here]_](https://stitchnstyle.dixitkhushi288.workers.dev/)
+🔗 **Live Demo:**(https://stitchnstyle.dixitkhushi288.workers.dev/)
 
 ---
 
